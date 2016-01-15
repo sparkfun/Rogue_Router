@@ -1,9 +1,16 @@
 /*
-  SDAPServer - A Sloppy Amalgam of SDWebServer and WiFiAccessPoint
+  SDAPServerCaptive - A Sloppy Amalgam of SDWebServer and WiFiAccessPoint with Captive Portal functionality 
 
   Copyright (c) 2015 Hristo Gochkov. All rights reserved.
   Modified 2016 Nick Poole.
   This file is part of the ESP8266WebServer library for Arduino environment.
+
+  Captive Portal modifications by Nick Poole are dependant on latest DNSServer library via:
+  https://github.com/knovoselic/Arduino/tree/dns_server_improvements/hardware/esp8266com/esp8266/libraries/DNSServer
+  with patch by "blackie" from:
+  http://www.esp8266.com/viewtopic.php?f=32&t=3618&start=36#p21726
+
+  No SSL Support :( So https:// adresses are not redirect. Traffic is rejected. 
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -244,7 +251,7 @@ void setupWiFi()
   String macID = String(mac[WL_MAC_ADDR_LENGTH - 2], HEX) +
                  String(mac[WL_MAC_ADDR_LENGTH - 1], HEX);
   macID.toUpperCase();
-  String AP_NameString = "R0gue_Mini #" + macID;
+  String AP_NameString = "R0gue_Mini#" + macID;
 
   char AP_NameChar[AP_NameString.length() + 1];
   memset(AP_NameChar, 0, AP_NameString.length() + 1);
