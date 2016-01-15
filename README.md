@@ -9,16 +9,24 @@ Featured here: https://www.sparkfun.com/news/2009
 
 *Img* - Pics of the enclosure
 
-## Rogue1 
+## Enclosure Versions
+
+### Rogue1 
 
 ...is the version shown in the video.
 
 ![Rogue1](https://raw.githubusercontent.com/sparkfun/Rogue_Router/master/Img/Rogue1.jpg)
 
-## Rogue1.2 
+### Rogue1.2 
 
 ...has an updated enclosure with snap-in standoffs and SD instead of uSD. 
 
 ![Rogue1.2](https://raw.githubusercontent.com/sparkfun/Rogue_Router/master/Img/Rogue1.2_closeup.jpg)
 
 ![Rogue1.2b](https://raw.githubusercontent.com/sparkfun/Rogue_Router/master/Img/Rogue1.2.jpg)
+
+### Rogue Mini
+
+...is very very small and does not incorporate solar charging
+
+![RogueMini](https://raw.githubusercontent.com/sparkfun/Rogue_Router/master/Img/RogueMini.jpg)
